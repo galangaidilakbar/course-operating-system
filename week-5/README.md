@@ -1,6 +1,3 @@
-- [ ] FIle Permission
-- [ ] Umask
-
 # Sistem Operasi Pertemuan 5
 
 ## Overview
@@ -113,7 +110,8 @@ Ternyata ini dia spesialnya menurut saya.
 
 Sumber: [Ini alasan saya pindah ke VIM | medium.com](https://medium.com/easyread/yuk-belajar-pakai-vim-226894133299)
 
-cerita menarik lainnya: 
+cerita menarik lainnya:
+
 ![Meme Vim](https://miro.medium.com/max/1400/1*vhsWW0X4IZpq1B1bUA4awg.jpeg)
 
 [Saya Belajar Vim Selama 1,5 Bulan dan Belum Bisa Keluar!](https://budasuyasa.medium.com/saya-belajar-vim-selama-1-5-bulan-dan-belum-bisa-keluar-8517eb019b30)
