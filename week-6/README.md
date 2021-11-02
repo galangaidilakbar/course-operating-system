@@ -31,6 +31,9 @@
     Kalo gaada kamu
     ```
 
+    Hasil akhir yang saya harapkan:
+    ![blablabal](public/hasil-akhir.png)
+
 ## Ketentuan Pengumpulan
 
 1. Kumpulkan Di Google Form --> [Form Pengumpulan Tugas 6](https://forms.gle/FhHv489UURteQPQ16)
