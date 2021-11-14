@@ -6,16 +6,39 @@ Pertemuan tujuh membahas tentang bagaimana cara mengarchivekan file atau direkto
 
 ## tar 
 
-`tar` merupakan singkatan dari tape archive, yang merupakan perintah yang paling umum digunakan oleh sistem Linux/Unix untuk backup.  Ini memungkinkan Anda untuk dengan cepat mengakses kumpulan file dan menempatkannya ke dalam file arsip yang sangat terkompresi yang biasa disebut tarball, atau tar, gzip, dan bzip di Linux.  Algoritma yang digunakan untuk mengompresi .tar.gz dan .tar.bz2 masing-masing adalah algoritma gzip atau bzip.
+`tar` adalah suatu perintah yang digunakan untuk membuat suatu arsip dari file ataupun direktori.
 
-** File atau direktori yang telah di archive dan di zip kan memiliki ukuran file yang sangat kecil **
+arsip itu artinya kan kumpulan-kumpulan dokumen ya. jadi pada dasarnya, perintah `tar` ini berguna untuk mengumpulkan banyak file ke satu file.
 
-### Pola command tar
+`tar` merupakan singkatan dari tape archive, yang merupakan perintah yang paling umum digunakan oleh sistem Linux/Unix untuk backup.
+
+contoh perintah `tar`
 
 ```bash
-# untuk mengarchivekan direktori
-tar options path-ke-file/direktori
-
-# untuk mengarchivekan file
-tar options .
+tar -cf arsip.tar file1 file2 file3
 ```
+Options `-c` digunakan untuk membuat tar, lalu options `-f` digunakan untuk memberikan nama file tarnya.
+
+### Options
+
+| No   | options |                     kegunaan |
+| :--- | :-----: | ---------------------------: |
+| 1    |   -c    |                  membuat tar |
+| 2    |   -f    |         memberikan nama file |
+| 3    |   -v    |               melihat proses |
+| 4    |   -z    | mengkompres file kedalam zip |
+| 5    |   -x    |   untuk mengekstrak file tar |
+
+Contoh lain
+```bash
+tar -zvcf arsip.tar.gz file1 file2 file3
+```
+
+Options `-z` digunakan untuk mengkompres file dengan zip, supaya nanti ukuran file tar nya itu bisa kecil. lalu options `-v` digunakan untuk melihat proses atau status pentaran suatu file.
+
+Gimana cara mengekstrak file tar? gampang yah, tinggal masukkan command tar dengan options `-x` dan `-f` seperti berikut:
+```bash
+tar -xf arsip.tar.gz
+```
+
+Options `-x` digunakan untuk mengekstrak file tar, dan options `-f` itu untuk nama file tar yang mana yang mau di ekstrak.
